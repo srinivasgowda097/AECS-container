@@ -13,7 +13,7 @@ RUN \
   rm wordpress.tar.gz
 
 COPY start.sh start.sh
-CMD ["chmod 777 start.sh"]
+CMD ["chmod 777 /start.sh"]
 
 VOLUME ["$APP_ROOT"]
 
