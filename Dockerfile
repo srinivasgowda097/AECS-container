@@ -20,4 +20,4 @@ RUN rm /usr/sbin/policy-rc.d
 CMD ["/start.sh"]
 
 EXPOSE 80
-Status API Training Shop Blog About Pricing
+
