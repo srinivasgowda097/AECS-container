@@ -13,12 +13,12 @@ RUN \
   rm wordpress.tar.gz
 
 COPY start.sh start.sh
-CMD ["chmod 777 /start.sh"]
+
 
 VOLUME ["$APP_ROOT"]
 
 RUN rm /usr/sbin/policy-rc.d
-CMD ["/start.sh"]
+CMD ["chmod 777 /start.sh;/start.sh"]
 
 EXPOSE 80
 
