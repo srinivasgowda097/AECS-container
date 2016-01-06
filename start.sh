@@ -5,15 +5,15 @@
 #
 #===============================================================================
 echo "Waiting for mysql:"
-./tcp_wait.sh $MYSQL_PORT_3306_TCP_ADDR $MYSQL_PORT_3306_TCP_PORT
+#./tcp_wait.sh $MYSQL_PORT_3306_TCP_ADDR $MYSQL_PORT_3306_TCP_PORT
 #-------------------------------------------------------------------------------
 echo "Creating database:"
-./create_db_mysql.sh $WP_DB $WP_USER $WP_PASS
+#./create_db_mysql.sh $WP_DB $WP_USER $WP_PASS
 #-------------------------------------------------------------------------------
 sed -e "s/database_name_here/$WP_DB/
 s/username_here/$WP_USER/
 s/password_here/$WP_PASS/
-s/localhost/$MYSQL_PORT_3306_TCP_ADDR/
+s/localhost/localhost/
 /'AUTH_KEY'/s/put your unique phrase here/$(pwgen -c -n -1 65)/
 /'SECURE_AUTH_KEY'/s/put your unique phrase here/$(pwgen -c -n -1 65)/
 /'LOGGED_IN_KEY'/s/put your unique phrase here/$(pwgen -c -n -1 65)/
