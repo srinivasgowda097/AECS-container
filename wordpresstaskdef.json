@@ -4,7 +4,7 @@
     {
       "name": "web",
       "links": [
-        "mysql"
+        "db"
       ],
       "image": "wordpress1",
       "essential": true,
@@ -24,7 +24,7 @@
           "value": "password"
         }
       ],
-      "name": "mysql",
+      "name": "db",
       "image": "mysql1",
       "cpu": 10,
       "memory": 200,
