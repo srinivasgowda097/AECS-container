@@ -20,8 +20,8 @@
     {
       "environment": [
         {
-          "name": "MYSQL_ROOT_PASSWORD",
-          "value": "password"
+          "name": "MYSQL_DATABASE",
+          "value": "wordpress"
         }
       ],
       "name": "db",
